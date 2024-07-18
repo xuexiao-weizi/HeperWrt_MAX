@@ -368,7 +368,7 @@ CONFIG_PACKAGE_luci-app-usb-printer=y
 CONFIG_PACKAGE_luci-app-v2ray-server=y
 CONFIG_PACKAGE_luci-app-verysync=y
 CONFIG_PACKAGE_luci-app-watchcat=y
-CONFIG_PACKAGE_luci-app-webd=y
+# CONFIG_PACKAGE_luci-app-webd is not set
 CONFIG_PACKAGE_luci-app-webdav=y
 CONFIG_PACKAGE_luci-app-wireguard=y
 CONFIG_PACKAGE_luci-app-wrtbwmon=y
@@ -433,7 +433,7 @@ CONFIG_PACKAGE_luci-i18n-usb-printer-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-v2ray-server-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-verysync-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-watchcat-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-webd-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-webd-zh-cn  is not set
 CONFIG_PACKAGE_luci-i18n-wireguard-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-wrtbwmon-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-zerotier-zh-cn=y
@@ -688,7 +688,7 @@ CONFIG_PACKAGE_v2ray-plugin=y
 CONFIG_PACKAGE_verysync=y
 CONFIG_PACKAGE_vim-full=y
 CONFIG_PACKAGE_watchcat=y
-CONFIG_PACKAGE_webd=y
+# CONFIG_PACKAGE_webd  is not set
 CONFIG_PACKAGE_wireguard-tools=y
 CONFIG_PACKAGE_xfs-mkfs=y
 CONFIG_PACKAGE_xl2tpd=y
