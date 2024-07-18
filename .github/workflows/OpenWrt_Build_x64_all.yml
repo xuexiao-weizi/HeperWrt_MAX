@@ -177,6 +177,12 @@ jobs:
       run: |
         cd openwrt
         source ${BUILD_PATH}/common.sh && Diy_menu4
+        sudo rm -rf ./feeds/danshui1
+        sudo rm -rf ./feeds/helloworld
+        sudo rm -rf ./feeds/passwall3
+        sudo rm -rf ./feeds/passwall2
+        sudo rm -rf ./feeds/passwall1
+        sudo rm -rf ./feeds/OpenClash
         
     - name: 安装插件源
       if: env.REPO_TOKEN
