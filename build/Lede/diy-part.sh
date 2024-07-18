@@ -56,13 +56,13 @@ export Enable_IPV4_function="1"              # 编译IPV4固件(1为启用命令
 # export OpenClash_branch="0"                  # OpenClash的源码分别有【master分支】和【dev分支】(填0为使用master分支,填1为使用dev分支)
 # export OpenClash_Core="0"                    # 增加OpenClash时,把核心下载好,(填1为下载【dev单核】,填2为下载【dev/meta/premium三核】,填0为不需要核心)
 
-sudo rm -rf ./feeds/danshui1
-sudo rm -rf ./feeds/danshui2
-sudo rm -rf ./feeds/helloworld
-sudo rm -rf ./feeds/passwall3
-sudo rm -rf ./feeds/passwall2
-sudo rm -rf ./feeds/passwall1
-sudo rm -rf ./feeds/OpenClash
+rm -rf ./feeds/danshui1
+rm -rf ./feeds/danshui2
+rm -rf ./feeds/helloworld
+rm -rf ./feeds/passwall3
+rm -rf ./feeds/passwall2
+rm -rf ./feeds/passwall1
+rm -rf ./feeds/OpenClash
 
 # 个性签名,默认增加年月日[$(TZ=UTC-8 date "+%Y.%m.%d")]
 export Customized_Information="OpenWRT by SunnyFree build $(TZ=UTC-8 date "+%Y.%m.%d")"  # 个性签名,你想写啥就写啥，(填0为不作修改)
