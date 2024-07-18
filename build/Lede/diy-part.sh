@@ -3,7 +3,6 @@
 # DIY扩展二合一了，在此处可以增加插件
 # 自行拉取插件之前请SSH连接进入固件配置里面确认过没有你要的插件再单独拉取你需要的插件
 # 不要一下就拉取别人一个插件包N多插件的，多了没用，增加编译错误，自己需要的才好
- sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 
 #添加homeproxy插件
 # git clone https://github.com/douglarek/luci-app-homeproxy.git package/luci-app-homeproxy
@@ -56,13 +55,6 @@ export Enable_IPV4_function="1"              # 编译IPV4固件(1为启用命令
 # export OpenClash_branch="0"                  # OpenClash的源码分别有【master分支】和【dev分支】(填0为使用master分支,填1为使用dev分支)
 # export OpenClash_Core="0"                    # 增加OpenClash时,把核心下载好,(填1为下载【dev单核】,填2为下载【dev/meta/premium三核】,填0为不需要核心)
 
-rm -rf ./feeds/danshui1
-rm -rf ./feeds/danshui2
-rm -rf ./feeds/helloworld
-rm -rf ./feeds/passwall3
-rm -rf ./feeds/passwall2
-rm -rf ./feeds/passwall1
-rm -rf ./feeds/OpenClash
 
 # 个性签名,默认增加年月日[$(TZ=UTC-8 date "+%Y.%m.%d")]
 export Customized_Information="OpenWRT by SunnyFree build $(TZ=UTC-8 date "+%Y.%m.%d")"  # 个性签名,你想写啥就写啥，(填0为不作修改)
