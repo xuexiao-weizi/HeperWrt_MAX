@@ -126,7 +126,7 @@ jobs:
     - name: 检测文件和对比上游版本
       run: |
         cd ${GITHUB_WORKSPACE}
-        bash <(curl -fsSL https://raw.githubusercontent.com/gxnas/OpenWrt-Common/main/custom/first.sh)
+        bash <(curl -fsSL https://raw.githubusercontent.com/xuexiao-weizi/OpenWrt-Common/main/custom/first.sh)
         source ${GITHUB_WORKSPACE}/build/${{ env.FOLDER_NAME }}/settings.ini
         export INPUTS_REPO_BRANCH="${{ github.event.inputs.REPO_BRANCH }}"
         export INPUTS_CONFIG_FILE="${{ github.event.inputs.CONFIG_FILE }}"
@@ -177,13 +177,6 @@ jobs:
       run: |
         cd openwrt
         source ${BUILD_PATH}/common.sh && Diy_menu4
-        sudo rm -rf ./feeds/danshui1
-        sudo rm -rf ./feeds/danshui2
-        sudo rm -rf ./feeds/helloworld
-        sudo rm -rf ./feeds/passwall3
-        sudo rm -rf ./feeds/passwall2
-        sudo rm -rf ./feeds/passwall1
-        sudo rm -rf ./feeds/OpenClash
         
     - name: 安装插件源
       if: env.REPO_TOKEN
